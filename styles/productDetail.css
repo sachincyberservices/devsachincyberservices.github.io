@@ -1,30 +1,4 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    /* min-height: 100vh; */
-}
-
-.container {
-    /* max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px; */
-}
-
-/* Hide desktop navigation on mobile */
-@media (max-width: 767px) {
-    .nav-menu {
-        display: none !important;
-    }
-}
+/* HEADER CSS */
 
 /* HEADER STYLES - MAIN NAVIGATION */
 header {
@@ -205,223 +179,10 @@ nav {
     transform: rotate(45deg) translate(-6px, -7px);
 }
 
-/* Main Content */
-main {
-    background: white;
-    margin: 2rem 0;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
+/* HEADER CSS END */
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    position: relative;
-    overflow: hidden;
-}
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="30" cy="30" r="4"/></g></svg>') repeat;
-    animation: float 20s infinite linear;
-}
-
-@keyframes float {
-    0% { transform: translateX(-60px); }
-    100% { transform: translateX(0); }
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-    animation: fadeInUp 1s ease-out;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
-    animation: fadeInUp 1s ease-out 0.2s both;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.cta-button {
-    display: inline-block;
-    background: white;
-    color: #667eea;
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
-    animation: fadeInUp 1s ease-out 0.4s both;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Products Section */
-.products-section {
-    padding: 4rem 2rem;
-    background: #f8f9fa;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #333;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.product-category {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.product-category:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    border-color: #667eea;
-}
-
-.product-category h3 {
-    color: #667eea;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.product-category h3::before {
-    content: '📦';
-    font-size: 1.2rem;
-}
-
-.product-list {
-    list-style: none;
-}
-
-.product-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
-    transition: all 0.3s ease;
-}
-
-.product-list li:hover {
-    color: #667eea;
-    padding-left: 10px;
-}
-
-.product-list li:last-child {
-    border-bottom: none;
-}
-
-/* Services Section */
-.services-section {
-    padding: 4rem 2rem;
-    background: white;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.service-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-    transform: rotate(45deg);
-    transition: all 0.5s ease;
-}
-
-.service-card:hover::before {
-    transform: rotate(45deg) translate(20px, 20px);
-}
-
-.service-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
-
-.service-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-}
-
-.service-card p {
-    position: relative;
-    z-index: 1;
-}
+/* FOOTER CSS START */
 
 /* Footer */
 footer {
@@ -455,7 +216,9 @@ footer {
     opacity: 0.8;
 }
 
-/* MOBILE RESPONSIVE STYLES */
+/* FOOTER CSS END */
+
+/* Media Query For Header Start*/
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: flex;
@@ -542,13 +305,4 @@ footer {
         font-size: 1.1rem;
     }
 }
-
-/* Animations */
-.fade-in {
-    animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+/* Media Query For Header End*/

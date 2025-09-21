@@ -1,0 +1,36 @@
+{
+    "productlist": {
+        "holders": [
+            {
+                "id": "1",
+                "name": "Holder 1",
+                "image": "holder1.jpg",
+                "description": "This is Holder 1",
+                "price" : 19.99
+            },
+            {
+                "id": "2",
+                "name": "Holder 2",
+                "image": "holder2.jpg",
+                "description": "This is Holder 2",
+                "price" : 29.99
+            },
+            {
+                "id": "3",
+                "name": "Holder 3",
+                "image": "holder3.jpg",
+                "description": "This is Holder 3",
+                "price" : 39.99
+            }
+        ]
+    },
+    "contenttitle": {
+        "holders" :{
+            "title": "File Holders",
+            "subtitle": "Choose from our range of quality holders",
+            "description": "We offer a variety of holders to suit your needs. Browse through our collection and find the perfect one for you.",
+            "icon": "holder"
+        }
+    }
+    
+}
